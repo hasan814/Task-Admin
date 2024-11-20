@@ -5,10 +5,10 @@ import React, { PropsWithChildren } from "react";
 
 const queryClient = new QueryClient();
 
-const Providers = ({ children }: PropsWithChildren) => {
+const QueryProvider = ({ children }: PropsWithChildren) => {
   return (
     <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
   );
 };
 
-export default Providers;
+export default QueryProvider;
